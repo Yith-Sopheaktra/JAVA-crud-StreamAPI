@@ -1,10 +1,12 @@
+import org.nocrala.tools.texttablefmt.BorderStyle;
+import org.nocrala.tools.texttablefmt.CellStyle;
+import org.nocrala.tools.texttablefmt.CellStyle.HorizontalAlign;
+import org.nocrala.tools.texttablefmt.ShownBorders;
+import org.nocrala.tools.texttablefmt.Table;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import org.nocrala.tools.texttablefmt.BorderStyle;
-import org.nocrala.tools.texttablefmt.CellStyle;
-import org.nocrala.tools.texttablefmt.ShownBorders;
-import org.nocrala.tools.texttablefmt.Table;
 
 public class Utils {
     public static void searchStudent(Scanner input, String name, ArrayList<Student> students){
@@ -45,6 +47,10 @@ public class Utils {
         List<Student> list = students.stream().filter(e -> !(e.getId() == delID)).toList();
         students = new ArrayList<>(list);
         displayStudent(students);
+    }
+
+    public static void updateStudent(ArrayList<Student> students){
+
     }
 
 }
