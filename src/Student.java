@@ -14,7 +14,7 @@ public class Student {
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 ", score=" + score +
-                '}';
+                '}'+"\n";
     }
 
     public Student(){}
