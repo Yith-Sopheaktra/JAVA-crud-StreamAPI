@@ -17,7 +17,8 @@ public class Main {
 //        String name = input.nextLine();
 //        Utils.searchStudent(input,name,students);
 
-        Utils.addStudent(students,input);
-        System.out.println(students);
+//        Utils.addStudent(students,input);
+        Utils.deleteStudent(students,input);
+
     }
 }
