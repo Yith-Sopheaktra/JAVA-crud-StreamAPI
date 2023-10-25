@@ -49,8 +49,8 @@ public class Utils {
         displayStudent(students);
     }
 
-    public static void updateStudent(ArrayList<Student> students){
-
+    public static void updateStudent(ArrayList<Student> students,Scanner input){
+        int upID = Helper.readInteger("Input ID to update data : ",input);
     }
 
 }
