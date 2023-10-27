@@ -18,7 +18,7 @@ public class Main {
 //        Utils.searchStudent(input,name,students);
 
 //        Utils.addStudent(students,input);
-        Utils.deleteStudent(students,input);
-
+//        Utils.deleteStudent(students,input);
+        Utils.updateStudent(students,input);
     }
 }

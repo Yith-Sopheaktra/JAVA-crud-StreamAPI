@@ -7,6 +7,7 @@ import org.nocrala.tools.texttablefmt.Table;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class Utils {
     public static void searchStudent(Scanner input, String name, ArrayList<Student> students){
@@ -49,8 +50,11 @@ public class Utils {
         displayStudent(students);
     }
 
-    public static void updateStudent(ArrayList<Student> students){
-
+    public static void updateStudent(ArrayList<Student> students, Scanner input){
+        displayStudent(students);
+        int upID = Helper.readInteger("Input Student ID to Update : ",input);
+        students.stream().filter(student -> student.getId() == upID).findFirst().ifPresent(student -> student.input(input));
+        displayStudent(students);
     }
 
 }
